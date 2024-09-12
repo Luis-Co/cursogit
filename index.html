@@ -1,59 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Orden Now - App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cf205e4498.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-   <div class="container">
+
     <header>
-        <h1 class="logo">MI SITIO WEB - NOW!!</h1>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Sobre Nosotros</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Blog</a></li>
-        </ul>
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-auto">
+                    <h1>Mi Orden Now</h1>
+                </div>
+                <div class="col-auto">
+                    <div class="avatar-container" data-target="#profileOptions" data-toggle="modal">
+                        <img src="img/avatar.jpg" alt="">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade profile-options-modal" id="profileOptions" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+      
+                <div class="modal-header">
+                  <h5 class="modal-title">Opciones</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+      
+                <div class="modal-body">
+                  <ul class="profile-options-list">
+                      <li>
+                          <a href="#"><i class="fas fa-user"></i> Mi perfil</a>
+                      </li>
+                      <li>
+                          <a href="#"><i class="fas fa-map-marker-alt"></i> Mis direcciones</a>
+                      </li>
+                      <li>
+                          <a href="#"><i class="fas fa-credit-card"></i> Mis tarjetas</a>
+                      </li>
+                      <li>
+                          <a href="#" class="text-danger"><i class="fas fa-times-circle"></i> Cerrar sesión</a>
+                      </li>
+                  </ul>
+                </div>
+             
+              </div>
+            </div>
+          </div>
+      
     </header>
-    <main>
-        <section>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Temporibus, quaerat eaque 
-                soluta inventore ut odio dolore tenetur? Quae maiores 
-                assumenda perspiciatis! Soluta at quas deserunt dicta
-                 sequi commodi dolorem. Tempore!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Temporibus, quaerat eaque 
-                    soluta inventore ut odio dolore tenetur? Quae maiores 
-                    assumenda perspiciatis! Soluta at quas deserunt dicta
-                     sequi commodi dolorem. Tempore!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Temporibus, quaerat eaque 
-                        soluta inventore ut odio dolore tenetur? Quae maiores 
-                        assumenda perspiciatis! Soluta at quas deserunt dicta
-                         sequi commodi dolorem. Tempore!</p>
-        </section>
-        <section>
-            <h2>SUBTITULO</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Temporibus, quaerat eaque 
-                soluta inventore ut odio dolore tenetur? Quae maiores 
-                assumenda perspiciatis! Soluta at quas deserunt dicta
-                 sequi commodi dolorem. Tempore!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Temporibus, quaerat eaque 
-                    soluta inventore ut odio dolore tenetur? Quae maiores 
-                    assumenda perspiciatis! Soluta at quas deserunt dicta
-                     sequi commodi dolorem. Tempore!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Temporibus, quaerat eaque 
-                        soluta inventore ut odio dolore tenetur? Quae maiores 
-                        assumenda perspiciatis! Soluta at quas deserunt dicta
-                         sequi commodi dolorem. Tempore!</p>
-        </section>
-    </main>
-   </div>   
+
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
